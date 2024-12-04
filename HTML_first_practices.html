@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prova</title>
+  
+  <script type="text/javascript">
+   var votoCdt;
+   var data = new Date();
+   dia = data.getDate();
+   mes = data.getMonth() +1;
+   ano = data.getFullYear();
+   hora = data.getHours();
+   min = data.getMinutes();   
+   
+   	
+   
+   function html(){
+   	votoCdt="HTML";
+    document.getElementById("htmlID").style.color = "#32CD32";
+    document.getElementById("cssID").style.color = "#000000";
+    document.getElementById("jsID").style.color = "#000000";
+   }
+   
+   function css(){
+   	votoCdt="CSS";
+    document.getElementById("htmlID").style.color = "#000000";
+    document.getElementById("cssID").style.color = "#32CD32";
+    document.getElementById("jsID").style.color = "#000000";
+   } 
+   
+   function js(){
+   	votoCdt="JavaScript";
+    document.getElementById("htmlID").style.color = "#000000";
+    document.getElementById("cssID").style.color = "#000000";
+    document.getElementById("jsID").style.color = "#32CD32";
+   } 
+   
+   
+   function voto(){
+   	if(votoCdt){
+       alert("Seu voto em " +votoCdt +" foi computado em " +dia + "/" +mes + "/" +ano + " às " +hora +":" +min +".");       
+     }
+     
+     else{
+       alert("Não há candidato selecionado!")
+     }
+    }
+  </script>
+  
+</head>
+
+<body>
+  
+  <table align="center">  
+    <tr>
+      <th>Vote no seu candidato</th>
+    </tr>
+  </table>
+  
+  
+  <table align="center">
+    <tr>
+      <td rowspan=2><img src="https://catalin.red/dist/uploads/2011/01/css3-html5-logo-initial.png"></td>
+      <td id="htmlID">HTML</td>      
+    </tr>
+    
+    <tr>
+      <td><button onclick="html()">Selecionar</button></td>
+    </tr>
+    
+    <tr>
+      <td rowspan=2><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></td>
+      <td id="cssID">CSS</td>      
+    </tr>
+    
+    <tr>
+      <td> <button onclick="css()">Selecionar</button></td>
+    </tr>
+    
+    <tr>
+      <td rowspan=2><img src="https://blog.vandersonguidi.com.br/wp-content/uploads/2016/11/js3.png"></td>
+      <td id="jsID">JavaScript</td>      
+    </tr>
+    
+    <tr>
+      <td> <button onclick="js()">Selecionar</button></td>
+    </tr> 
+    
+    <tr>
+      <td colspan="2" align="center"><button class="vt" onclick="voto()">Votar</button></td>
+    </tr>
+  
+  
+  </table>
+  
+</body>
+</html>

@@ -1,0 +1,26 @@
+th{
+  width: 300px;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+tr:nth-child(odd){
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+img{
+  height: 60px;
+  width: 65px;
+}
+
+button.vt{
+  margin-top: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+button:select{
+  font-weight: bold;
+}
